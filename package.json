@@ -30,10 +30,8 @@
     "lint:server": "eslint --ignore-path .eslintignore 'core/server/**/*.js' 'core/*.js' '*.js'",
     "lint:shared": "eslint --ignore-path .eslintignore 'core/shared/**/*.js'",
     "lint:frontend": "eslint --ignore-path .eslintignore 'core/frontend/**/*.js'",
-    "lint:test": "eslint -c test/.eslintrc.json --ignore-path test/.eslintignore 'test/**/*.js'",
-    "lint": "yarn lint:server && yarn lint:shared && yarn lint:frontend && yarn lint:test",
-    "posttest": "yarn lint",
-    "fixmodulenotdefined": "yarn cache clean && cd core/client && rm -rf node_modules tmp dist && yarn && cd ../../"
+    "lint:test": "eslint -c test/.eslintrc.json --ignore-path test/.eslintignore 'test/**/*.js'"
+   
   },
   "engines": {
     "node": "^10.13.0 || ^12.10.0 || ^14.15.0",
